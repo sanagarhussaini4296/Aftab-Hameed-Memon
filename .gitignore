@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Scratch & temporary development scripts
+scratch/
+.system_generated/
+
+# Logs & temp files
+*.log
+.DS_Store
+Thumbs.db

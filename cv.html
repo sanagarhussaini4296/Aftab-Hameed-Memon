@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae | Prof. Dr. Aftab Hameed Memon</title>
+  <meta name="description" content="Curriculum Vitae of Prof. Dr. Aftab Hameed Memon, Professor of Civil Engineering at Quaid-e-Awam University of Engineering, Science & Technology (QUEST), Nawabshah, Pakistan.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    .cv-page-container {
+      max-width: 960px;
+      margin: 2rem auto 4rem auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 3.5rem;
+      box-shadow: var(--shadow-xl);
+    }
+    .cv-header {
+      border-bottom: 2px solid var(--border-strong);
+      padding-bottom: 2rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+    .cv-header-left h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 0.35rem;
+    }
+    .cv-header-left h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      margin-bottom: 0.5rem;
+    }
+    .cv-header-left p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .cv-actions-bar {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .cv-section {
+      margin-bottom: 2.5rem;
+    }
+    .cv-section-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--brand-blue);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1.5px solid var(--border-subtle);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    [data-theme="dark"] .cv-section-title {
+      color: var(--brand-azure);
+    }
+    .cv-item {
+      margin-bottom: 1.5rem;
+    }
+    .cv-item:last-child {
+      margin-bottom: 0;
+    }
+    .cv-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.25rem;
+    }
+    .cv-item-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .cv-item-date {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+    }
+    .cv-item-sub {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+    .cv-item-details {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+      line-height: 1.5;
+    }
+    .cv-list {
+      list-style-type: disc;
+      padding-left: 1.25rem;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .cv-list li {
+      margin-bottom: 0.4rem;
+    }
+    @media print {
+      .cv-page-container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+      }
+      .cv-actions-bar, .theme-toggle-btn {
+        display: none !important;
+      }
+      body {
+        background: #fff !important;
+        color: #000 !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-grid-pattern">
+
+  <div class="container">
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 0;">
+      <a href="index.html" class="btn btn-outline">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+      <div style="display: flex; gap: 0.75rem; align-items: center;">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <i id="themeIcon" class="fas fa-moon"></i>
+        </button>
+        <button onclick="window.print()" class="btn btn-primary">
+          <i class="fas fa-print"></i> Print / Save as PDF
+        </button>
+      </div>
+    </div>
+
+    <main class="cv-page-container">
+      <!-- CV Header -->
+      <header class="cv-header">
+        <div style="display: flex; gap: 1.5rem; align-items: center;">
+          <img src="assets/images/profile.jpg" alt="Prof. Dr. Aftab Hameed Memon" style="width: 105px; height: 105px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent-gold); box-shadow: var(--shadow-md); flex-shrink: 0;">
+          <div class="cv-header-left">
+            <h1>Prof. Dr. Aftab Hameed Memon</h1>
+            <h2>Professor of Civil Engineering</h2>
+            <p>
+              Department of Civil Engineering / Civil Engineering Technology<br>
+              Quaid-e-Awam University of Engineering, Science &amp; Technology (QUEST), Nawabshah, Sindh 67480, Pakistan<br>
+              <strong>Email:</strong> aftab@quest.edu.pk | aftabm78@hotmail.com<br>
+              <strong>PEC Reg:</strong> CIVIL / Professional Engineer (Pakistan Engineering Council)
+            </p>
+          </div>
+        </div>
+        <div style="text-align: right;">
+          <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.35rem;">
+            Google Scholar Citations:
+          </div>
+          <div style="font-size: 1.85rem; font-weight: 800; color: var(--accent-gold); line-height: 1;">
+            <a href="https://scholar.google.com/citations?user=CjmiuJMAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">6,290+</a>
+          </div>
+          <div style="font-size: 0.78rem; font-weight: 600; color: var(--text-secondary); margin-top: 0.25rem;">
+            h-index: 32+ | i10-index: 65+ | 150+ Publications
+          </div>
+        </div>
+      </header>
+
+      <!-- Education Section -->
+      <section class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+        
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <span class="cv-item-title">Doctor of Philosophy (Ph.D.) in Civil Engineering / Construction Management</span>
+            <span class="cv-item-date">2010 – 2014</span>
+          </div>
+          <div class="cv-item-sub">Universiti Tun Hussein Onn Malaysia (UTHM), Johor, Malaysia</div>
+          <div class="cv-item-details">
+            Dissertation: <em>STRUCTURAL MODELLING OF COST OVERRUN FACTORS IN CONSTRUCTION INDUSTRY</em>.
+          </div>
+        </div>
+
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <span class="cv-item-title">Master of Science (M.S.) in Construction Management</span>
+            <span class="cv-item-date">2004 – 2005</span>
+          </div>
+          <div class="cv-item-sub">Universiti Teknologi Malaysia (UTM), Skudai, Johor, Malaysia</div>
+          <div class="cv-item-details">
+            Thesis: <em>RESOURCE-DRIVEN SCHEDULING: BARRIERS TO IMPLEMENTATION</em>.
+          </div>
+        </div>
+
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <span class="cv-item-title">Bachelor of Engineering (B.E.) in Civil Engineering</span>
+            <span class="cv-item-date">1997 – 2001</span>
+          </div>
+          <div class="cv-item-sub">Quaid-e-Awam University of Engineering, Science &amp; Technology (QUEST), Nawabshah, Pakistan</div>
+          <div class="cv-item-details">
+            Graduated First Class with Honors.
+          </div>
+        </div>
+      </section>
+
+      <!-- Academic Experience Section -->
+      <section class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-briefcase"></i> Academic Appointments</h3>
+        
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <span class="cv-item-title">Professor</span>
+            <span class="cv-item-date">2022 – Present</span>
+          </div>
+          <div class="cv-item-sub">Department of Civil Engineering, QUEST Nawabshah, Pakistan</div>
+          <div class="cv-item-details">
+            Directing postgraduate research in Construction Project Management, supervising Ph.D. dissertations, and teaching advanced courses in quantitative risk modeling.
+          </div>
+        </div>
+
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <span class="cv-item-title">Associate Professor &amp; Chairman</span>
+            <span class="cv-item-date">2018 – 2022</span>
+          </div>
+          <div class="cv-item-sub">Department of Civil Engineering Technology, Faculty of Technology, QUEST Nawabshah</div>
+          <div class="cv-item-details">
+            Led academic administration, curriculum enhancement, laboratory modernization, and PEC accreditation procedures.
+          </div>
+        </div>
+
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <span class="cv-item-title">Assistant Professor</span>
+            <span class="cv-item-date">2014 – 2018</span>
+          </div>
+          <div class="cv-item-sub">Department of Civil Engineering, QUEST Nawabshah</div>
+          <div class="cv-item-details">
+            Delivered undergraduate courses, coordinated departmental quality enhancement cells (QEC), and formulated research proposals.
+          </div>
+        </div>
+
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <span class="cv-item-title">Lecturer</span>
+            <span class="cv-item-date">2007 – 2014</span>
+          </div>
+          <div class="cv-item-sub">Department of Civil Engineering, QUEST Nawabshah</div>
+        </div>
+      </section>
+
+      <!-- Industry Experience Section -->
+      <section class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-hard-hat"></i> Industrial Engineering Experience</h3>
+        
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <span class="cv-item-title">Project Coordinator</span>
+            <span class="cv-item-date">2005 – 2007</span>
+          </div>
+          <div class="cv-item-sub">Osmani &amp; Company (Pvt.) Ltd. Consulting Engineers, Pakistan</div>
+          <div class="cv-item-details">
+            Supervised highway, structural, and infrastructure contract administration, milestone progress tracking, and client billing certification.
+          </div>
+        </div>
+
+        <div class="cv-item">
+          <div class="cv-item-header">
+            <span class="cv-item-title">Assistant Planning Engineer</span>
+            <span class="cv-item-date">2002 – 2004</span>
+          </div>
+          <div class="cv-item-sub">Paragon Constructors (Pvt.) Ltd., Pakistan</div>
+          <div class="cv-item-details">
+            Responsible for master scheduling, resource leveling using Primavera, cost estimation, and variation orders for commercial projects.
+          </div>
+        </div>
+      </section>
+
+      <!-- Research Specializations -->
+      <section class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-microscope"></i> Research Specializations &amp; Scientific Thrusts</h3>
+        <ul class="cv-list">
+          <li><strong>Construction Cost &amp; Time Overrun Risk Modeling:</strong> Developer of the Weighted Risk Assessment Tool for Time and Cost Overrun (WRATTCO).</li>
+          <li><strong>Structural Equation Modeling (PLS-SEM &amp; AMOS):</strong> Advanced empirical analysis of multivariate project management interrelationships.</li>
+          <li><strong>Sustainable Construction &amp; Circular Economy:</strong> Solid construction waste management, life-cycle carbon assessment, and green building certification barriers.</li>
+          <li><strong>Lean Construction &amp; Modern Site Management:</strong> Implementation of Last Planner Systems, 5S, and BIM-enabled digital project tracking.</li>
+          <li><strong>Contract &amp; Organizational Management:</strong> Project delivery systems, contract claim evaluation, dispute avoidance, and organizational leadership in construction.</li>
+          <li><strong>Building Materials &amp; Concrete Technology:</strong> Bio-based self-healing concrete using indigenous precursors, high-strength self-compacting concrete, and supplementary cementitious materials (RHA).</li>
+          <li><strong>Qualitative &amp; Quantitative Analysis:</strong> Multi-criteria decision analysis (TOPSIS), survey instrument reliability validation, and mixed-method empirical methodologies.</li>
+        </ul>
+      </section>
+
+      <!-- Competitive Research Grants -->
+      <section class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-hand-holding-usd"></i> Competitive Research Grants &amp; Funded Projects</h3>
+        <ul class="cv-list">
+          <li>
+            <strong>Rs. 6.49 Million</strong> (08/2024 – 07/2026) — <em>"Development of Low-Cost Bio-Based Self-Healing Concrete Using Indigenous Materials for Sustainable and Durable Infrastructure in Pakistan"</em>. Principal Investigator. Sponsoring Agency: Higher Education Commission (HEC) Pakistan, National Research Program for Universities (NRPU). <strong>[Active Grant]</strong>
+          </li>
+          <li>
+            <strong>Rs. 1.00 Million</strong> (08/2017 – 12/2023) — <em>"Decision Support System for Improving Project Performance"</em>. Principal Investigator. Sponsoring Agency: Quaid-e-Awam University of Engineering, Science &amp; Technology (QUEST), Nawabshah. <strong>[Completed]</strong>
+          </li>
+          <li>
+            <strong>RM 114,000</strong> (04/2013 – 04/2016) — <em>"WRATTCO: Web-based Risk Assessment Technique for Time and Cost Overrun"</em>. Key Researcher &amp; Developer. Sponsoring Agency: Ministry of Higher Education (MOHE), Malaysia (Exploratory Research Grant Scheme - ERGS). <strong>[Completed]</strong>
+          </li>
+          <li>
+            <strong>RM 82,400</strong> (04/2013 – 04/2016) — <em>"A Novel Approach in Triggering, Assessing and Controlling Construction Waste Generation Throughout the Construction Lifecycle"</em>. Co-Investigator. Sponsoring Agency: Ministry of Higher Education (MOHE), Malaysia / UTHM. <strong>[Completed]</strong>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Honors & Research Awards -->
+      <section class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-trophy"></i> Honors, Inventions &amp; Research Awards</h3>
+        <ul class="cv-list">
+          <li>
+            <strong>2014:</strong> <em>Best Invention Award (Silver Medal)</em> — 25th International Invention, Innovation &amp; Technology Exhibition (ITEX14), Kuala Lumpur Convention Centre (KLCC), Malaysia (8–10 May 2014).
+          </li>
+          <li>
+            <strong>2014:</strong> <em>Best Invention and Innovation Award (Bronze Medal)</em> — Malaysian Technical Exhibition (MTE14), organized by Malaysian Association of Research Scientists (MARS), Malaysia.
+          </li>
+          <li>
+            <strong>2013:</strong> <em>Best Research Product Award (Gold Medal &amp; Cash Prize of RM 1,000)</em> — Research and Innovation Competition (R&amp;I 2013), Universiti Tun Hussein Onn Malaysia (UTHM) (19–20 December 2013).
+          </li>
+          <li>
+            <strong>2013:</strong> <em>Best Fundamental Innovative Research Award (Bronze Medal)</em> — Research and Innovation Competition (R&amp;I 2013), Universiti Tun Hussein Onn Malaysia (UTHM).
+          </li>
+          <li>
+            <strong>2012:</strong> <em>Best Paper Award (3rd Place, Bronze Medal &amp; Cash Prize of RM 300)</em> — Malaysian Technical Universities Conference on Engineering &amp; Technology (MUCET 2012), Perlis, Malaysia (20–21 November 2012).
+          </li>
+          <li>
+            <strong>2010:</strong> <em>PhD Scholarship under International Scholarship Scheme (2010–2013)</em> — Awarded fully funded international doctoral fellowship by Universiti Tun Hussein Onn Malaysia (UTHM).
+          </li>
+          <li>
+            <strong>2003:</strong> <em>Performance Award as Junior Engineer</em> — Paragon Constructors (Pvt.) Ltd., Pakistan.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Teaching & Courses Taught -->
+      <section class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-chalkboard-teacher"></i> Academic Teaching &amp; Courses Taught</h3>
+        
+        <div style="margin-bottom: 1.25rem;">
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--cv-primary); margin-bottom: 0.5rem;">Postgraduate Courses (Master's &amp; Ph.D.)</h4>
+          <ul class="cv-list">
+            <li><strong>CE812:</strong> Engineering and Construction Contracts Management</li>
+            <li><strong>CE814:</strong> Quality Management and Construction Performance</li>
+            <li><strong>CE811:</strong> Sustainable Construction Management</li>
+            <li><strong>CV812:</strong> Software Application in Civil Engineering</li>
+            <li><strong>CE501:</strong> Project Planning and Construction Management</li>
+            <li><strong>CE506:</strong> Contract Management in Construction</li>
+            <li><strong>CE507:</strong> Construction Risk Management</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--cv-primary); margin-bottom: 0.5rem;">Undergraduate Courses (B.E. Civil Engineering / BS Civil Engineering Technology)</h4>
+          <ul class="cv-list">
+            <li><strong>CE403:</strong> Quantity Surveying &amp; Estimation for Civil Works</li>
+            <li><strong>CE201:</strong> Strength of Materials-I</li>
+            <li><strong>CE254:</strong> Mechanics of Solids</li>
+            <li><strong>CE358:</strong> Professional Ethics For Technologist</li>
+            <li><strong>CE421:</strong> Entrepreneurship</li>
+            <li><strong>Core:</strong> Project Planning and Construction Management</li>
+            <li><strong>Core:</strong> Construction Planning, Project Management and Economics</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Postgraduate Research & Thesis Supervision -->
+      <section class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-user-graduate"></i> Postgraduate Research &amp; Thesis Mentorship</h3>
+        
+        <div style="margin-bottom: 1.25rem;">
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--cv-primary); margin-bottom: 0.5rem;">Ph.D. Dissertation Supervision</h4>
+          <ul class="cv-list">
+            <li><strong>Developing Assessment Tool for Quality Management in Construction Projects of Pakistan</strong> [On Going]</li>
+            <li><strong>Integrating Predictive Analytics and Machine Learning Models for Proactive Construction Risk Management: A Case Study Approach</strong> [On Going]</li>
+            <li><strong>Climate-Resilient Urban Construction Planning in Pakistan</strong> [On Going]</li>
+            <li><strong>Framework for Improving Pavement Performance to Control Traffic Accidents Caused by Distresses in Metropolitan City Karachi, Pakistan</strong> [Completed in 2025]</li>
+            <li><strong>Decision Support System for Improving Project Performance</strong> [Completed in 2023]</li>
+            <li><strong>Relationship Of Cause And Effect Of Changes To Construction Project Performance: UAE Construction Industry</strong> [Completed in 2021]</li>
+            <li><strong>Modeling the Factors of Cost Overrun in Building Construction Projects of UAE</strong> [Completed in 2021]</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--cv-primary); margin-bottom: 0.5rem;">Master's (M.S.) Theses Supervised (Over 50 Completed)</h4>
+          <ul class="cv-list">
+            <li><strong>A Risk-Based Construction Management Framework for New Building Projects within Operational Hospitals</strong> [On Going]</li>
+            <li><strong>Evaluation Of Resource Constraints And Disbursement Delays In SPHF Housing Reconstruction</strong> [On Going]</li>
+            <li><strong>Improvement of Client-Consultant-Contractor Communication in Construction Projects in Sindh, Pakistan</strong> [Completed in 2026]</li>
+            <li><strong>Impact of Human Resource management practices on Employee Satisfaction and Project Performance: A case study of Remote Construction Projects</strong> [Completed in 2026]</li>
+            <li><strong>Assessing Relationship Of Profitability Indicators With Project Success Metrics In Construction Organizations Of Pakistan</strong> [Completed in 2025]</li>
+            <li><strong>Factors Contributing To The Loss Of Equipment Productivity In Highway Construction Projects In Pakistan</strong> [Completed in 2024]</li>
+            <li><strong>Framework For Enhancing The Usage Of It Tools For Improving Project Performance</strong> [Completed in 2024]</li>
+            <li><strong>Examining The Impacts Of Employee Empowerment On Organizational Performance Within The Construction Industry Of Pakistan</strong> [Completed in 2024]</li>
+            <li><strong>E-Procurement Practices in Construction Industry of Sindh: A Comparison of Public Sector Departments and Contractors</strong> [Completed in 2024]</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Professional Memberships -->
+      <section class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-award"></i> Professional Affiliations &amp; Registrations</h3>
+        <ul class="cv-list">
+          <li><strong>Registered Professional Engineer (P.E.):</strong> Pakistan Engineering Council (PEC)</li>
+          <li><strong>Corporate Member:</strong> Concrete Society Malaysia (CSM)</li>
+          <li><strong>Member:</strong> Malaysian Society for Engineering and Technology (MSET)</li>
+          <li><strong>Member:</strong> International Association of Engineers (IAENG)</li>
+          <li><strong>Peer Reviewer:</strong> ASCE Journal of Construction Engineering and Management; International Journal of Project Management; Construction Management and Economics.</li>
+        </ul>
+      </section>
+
+      <!-- Published Books & Monographs -->
+      <section class="cv-section">
+        <h3 class="cv-section-title"><i class="fas fa-book-reader"></i> Authored Books &amp; Monographs</h3>
+        <ul class="cv-list">
+          <li>
+            <strong>Memon, A. H.</strong>, &amp; Zin, R. M. (2012). <em>Resource-Driven Scheduling: Barriers to Implementation</em>. LAP LAMBERT Academic Publishing, Saarbrücken, Germany. ISBN: 978-3-8473-4176-5.
+          </li>
+          <li>
+            Rahman, I. A., <strong>Memon, A. H.</strong>, &amp; Zaidi, A. M. A. (2011). <em>Introduction to Lean Construction</em>. Penerbit UTHM (Publication Office, Universiti Tun Hussein Onn Malaysia), Malaysia. ISBN: 978-983-5457-56-2.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Key Publications -->
+      <section class="cv-section">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+          <h3 class="cv-section-title" style="margin-bottom: 0.5rem;"><i class="fas fa-book"></i> Scholarly Publications Summary (150+ Works)</h3>
+          <span style="font-size: 0.85rem; font-weight: 700; color: var(--accent-gold);">115 Journal Papers • 32 Conference Papers • 2 Books</span>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+          Complete yearwise publications repository (2006–2026) with WOS SCIE, Scopus Q1, and HJRS category metrics is available on Dr. Memon's <a href="index.html#publications" style="color: var(--accent-gold); font-weight: 700;">Online Academic Portal</a> and <a href="https://scholar.google.com/citations?user=CjmiuJMAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" style="color: var(--brand-azure); font-weight: 700;">Google Scholar Profile</a>.
+        </p>
+        <ul class="cv-list">
+          <li>
+            <strong>Memon, M. A.</strong>, <strong>Memon, A. H.</strong>, Memon, Z. A., Khahro, S. H., &amp; Memon, A. Q. (2026). "Optimizing Nylon Fibers and Supplementary Cementitious Materials for High-Strength Self-Compacting Concrete." <em>Civil Engineering Journal</em>, 12(7), 2681–2698. (WOS: IF=4.9, Scopus: Q1, W-Category)
+          </li>
+          <li>
+            Soomro, M. A., Ali, A., <strong>Memon, A. H.</strong>, Khahro, S. H., &amp; Memon, Z. A. (2024). "Improving innovation in construction projects: Knowledge-sharing, open-mindedness and shared leadership." <em>Journal of Innovation &amp; Knowledge</em>, 9(4), 100629. (WOS: SCIE, IF=15.6, W-Category)
+          </li>
+          <li>
+            Hussin, J. M., Rahman, I. A., &amp; <strong>Memon, A. H.</strong> (2013). "The way forward in sustainable construction: Issues and challenges." <em>International Journal of Advances in Applied Sciences</em>, 2(1), 31-42. (Cited 540+ times)
+          </li>
+          <li>
+            Rahman, I. A., <strong>Memon, A. H.</strong>, &amp; Abd Karim, A. T. (2013). "Significant factors causing cost overruns in large construction projects in Malaysia." <em>Journal of Applied Sciences</em>, 13(2), 286-293. (Cited 375+ times)
+          </li>
+          <li>
+            <strong>Memon, A. H.</strong>, Rahman, I. A., Abdullah, M. R., &amp; Azis, A. A. A. (2010). "Factors affecting construction cost in Mara large construction project: Perspective of project management consultant." <em>Int. Journal of Sustainable Construction Engineering and Technology</em>, 1(2), 41-52. (Cited 365+ times)
+          </li>
+          <li>
+            <strong>Memon, A. H.</strong>, &amp; Rahman, I. A. (2014). "SEM-PLS analysis of inhibiting factors of cost performance for large construction projects in Malaysia: Perspective of clients and consultants." <em>The Scientific World Journal</em>, 2014. (Cited 340+ times)
+          </li>
+          <li>
+            <strong>Memon, A. H.</strong>, Sohu, S., &amp; Memon, K. N. (2020). "Adoption of Lean construction tools for waste minimization in residential construction." <em>International Journal of Construction Management</em>, 22(10), 1925-1934.
+          </li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
