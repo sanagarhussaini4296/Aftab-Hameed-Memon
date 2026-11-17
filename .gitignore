@@ -4,6 +4,7 @@ node_modules/
 # Scratch & temporary development scripts
 scratch/
 .system_generated/
+.netlify/
 
 # Logs & temp files
 *.log
