@@ -1681,80 +1681,472 @@
                                     <!-- ==========================================================================
          TAB VIEW 7: ACTIVITIES & LEADERSHIP
          ========================================================================== -->
-                                    <div id="activities-view" class="view-section">
+    <div id="activities-view" class="view-section">
 
-                                      <!-- Subpage Header Banner -->
-                                      <div class="section-banner">
-                                        <div class="container">
-                                          <div class="banner-flex">
-                                            <div class="banner-left">
-                                              <div class="banner-info">
-                                                <div class="breadcrumb"><i class="fas fa-home"></i> Home / Activities
-                                                </div>
-                                                <h1>Academic Activities &amp; Leadership</h1>
-                                                <p>Institutional Governance, Q1/Q2 Editorial Service, and National
-                                                  Training Workshops</p>
-                                              </div>
-                                            </div>
-                                            <div class="banner-right-badges">
-                                              <span class="social-badge"><i class="fas fa-star"
-                                                  style="color: var(--accent-gold);"></i> Keynote
-                                                Speaker</span>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
+      <!-- Subpage Header Banner -->
+      <div class="section-banner">
+        <div class="container">
+          <div class="banner-flex">
+            <div class="banner-left">
+              <div class="banner-info">
+                <div class="breadcrumb"><i class="fas fa-home"></i> Home / Activities</div>
+                <h1>Academic Activities &amp; Leadership</h1>
+                <p>Institutional Governance, Continuous Editorial Service, and Keynotes &amp; Technical Workshops</p>
+              </div>
+            </div>
+            <div class="banner-right-badges">
+              <span class="social-badge"><i class="fas fa-award" style="color: var(--accent-gold);"></i> 3 Core Activity Domains</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                                      <div class="container section-padding" style="padding-top: 0;">
-                                        <div class="activities-grid">
+      <div class="container section-padding" style="padding-top: 0;">
 
-                                          <div class="activity-card">
-                                            <span class="activity-date"><i class="far fa-calendar-alt"></i> Continuous
-                                              Service</span>
-                                            <h3 class="activity-title">Editorial Board &amp; Scholarly Peer Reviewer
-                                            </h3>
-                                            <p class="activity-desc">
-                                              Invited peer reviewer for premier international Q1/Q2 journals:
-                                              <em>ASCE Journal of Construction Engineering and Management</em>,
-                                              <em>International Journal of Project Management (Elsevier)</em>,
-                                              <em>Construction Management and Economics (Taylor &amp; Francis)</em>, and
-                                              <em>Sustainability (MDPI)</em>.
-                                            </p>
-                                          </div>
+        <!-- 3 Sub-Menu Navigation Head (Separated and Opened on Click) -->
+        <div class="activities-submenus-grid">
 
-                                          <div class="activity-card">
-                                            <span class="activity-date"><i class="far fa-calendar-alt"></i>
-                                              Institutional Leadership</span>
-                                            <h3 class="activity-title">Chairman, Civil Engineering Technology</h3>
-                                            <p class="activity-desc">
-                                              Led the Department of Civil Engineering Technology at QUEST Nawabshah.
-                                              Orchestrated the successful
-                                              adoption of Outcome-Based Education (OBE) for PEC accreditation,
-                                              established modern CAD/BIM laboratories,
-                                              and launched industry-faculty panels.
-                                            </p>
-                                          </div>
+          <button class="activity-subtab-card active" data-activity-tab="leadership">
+            <div class="subtab-icon-box"><i class="fas fa-university"></i></div>
+            <div class="subtab-info">
+              <h3 class="subtab-title">Institutional Leadership</h3>
+              <p class="subtab-desc">Department Chairmanship, OBE Accreditation &amp; Academic Governance</p>
+            </div>
+            <span class="subtab-badge">7 Key Roles</span>
+          </button>
 
-                                          <div class="activity-card">
-                                            <span class="activity-date"><i class="far fa-calendar-alt"></i> Workshops
-                                              &amp; Keynotes</span>
-                                            <h3 class="activity-title">SEM-PLS Hands-On Workshop Series</h3>
-                                            <p class="activity-desc">
-                                              Conducted specialized technical training workshops on <em>"Multivariate
-                                                Analysis in Engineering Research
-                                                using SmartPLS &amp; SPSS"</em>, training over 350 postgraduate
-                                              researchers and engineering faculty
-                                              across Pakistani universities.
-                                            </p>
-                                          </div>
+          <button class="activity-subtab-card" data-activity-tab="service">
+            <div class="subtab-icon-box"><i class="fas fa-feather-alt"></i></div>
+            <div class="subtab-info">
+              <h3 class="subtab-title">Continuous Service</h3>
+              <p class="subtab-desc">Editorial Boards, Advisory Panels &amp; Q1/Q2 Scholarly Peer Reviewer</p>
+            </div>
+            <span class="subtab-badge">20+ Top Journals</span>
+          </button>
 
-                                        </div>
-                                      </div>
+          <button class="activity-subtab-card" data-activity-tab="workshops">
+            <div class="subtab-icon-box"><i class="fas fa-microphone-alt"></i></div>
+            <div class="subtab-info">
+              <h3 class="subtab-title">Workshops &amp; Keynotes</h3>
+              <p class="subtab-desc">Keynote Speeches, Master Trainings, CPD Workshops &amp; Lectures</p>
+            </div>
+            <span class="subtab-badge">10 Featured Events</span>
+          </button>
 
-                                    </div>
+        </div>
 
+        <!-- ==================== SUB-VIEW 1: INSTITUTIONAL LEADERSHIP ==================== -->
+        <div id="activity-subview-leadership" class="activity-subview active">
 
-                                    <!-- ==========================================================================
+          <!-- Featured Department Leadership Card -->
+          <div class="leadership-featured-card">
+            <div style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+              <div style="display: flex; align-items: center; gap: 1rem;">
+                <div class="leadership-icon-box" style="width: 52px; height: 52px; font-size: 1.35rem;">
+                  <i class="fas fa-landmark"></i>
+                </div>
+                <div>
+                  <span class="leadership-badge">Executive Department Leadership</span>
+                  <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); margin-top: 0.25rem;">
+                    Lead the Department of Civil Engineering Technology at QUEST Nawabshah
+                  </h3>
+                </div>
+              </div>
+              <span class="grant-status-badge active"><i class="fas fa-check-circle"></i> NTC / OBE Accredited</span>
+            </div>
+            <p style="font-size: 0.96rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.25rem;">
+              Orchestrated the successful adoption of Outcome-Based Education (OBE) for NTC accreditation, established modern CAD/BIM laboratories, and launched industry-faculty panels to ensure curriculum alignment with national infrastructure needs.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+              <span class="tag-badge">Department Leadership</span>
+              <span class="tag-badge">NTC Accreditation</span>
+              <span class="tag-badge">OBE Adoption</span>
+              <span class="tag-badge">CAD/BIM Laboratories</span>
+              <span class="tag-badge">Industry-Faculty Panels</span>
+            </div>
+          </div>
+
+          <!-- 6 Institutional Governance Appointments Grid -->
+          <div class="leadership-grid">
+
+            <!-- Role 1: CPD Focal Person -->
+            <div class="leadership-card">
+              <div>
+                <div class="leadership-card-top">
+                  <div class="leadership-icon-box"><i class="fas fa-award"></i></div>
+                  <span class="leadership-badge">PEC Standards</span>
+                </div>
+                <h4 class="leadership-card-title">Focal Person for Continuous Professional Development (CPD)</h4>
+                <p class="leadership-card-desc">
+                  Directing CPD-accredited technical courses, engineering workshops, and lifelong professional learning seminars for graduate civil engineers and university faculty under PEC guidelines.
+                </p>
+              </div>
+            </div>
+
+            <!-- Role 2: OBE Coordinator for PEC -->
+            <div class="leadership-card">
+              <div>
+                <div class="leadership-card-top">
+                  <div class="leadership-icon-box"><i class="fas fa-graduation-cap"></i></div>
+                  <span class="leadership-badge">Washington Accord</span>
+                </div>
+                <h4 class="leadership-card-title">Outcome Based Education (OBE) Coordinator for PEC Accreditation</h4>
+                <p class="leadership-card-desc">
+                  Spearheading Program Learning Outcomes (PLOs), Course Learning Outcomes (CLOs), Continuous Quality Improvement (CQI) cycles, and audit readiness for PEC / Washington Accord accreditation.
+                </p>
+              </div>
+            </div>
+
+            <!-- Role 3: Member of Board of Studies -->
+            <div class="leadership-card">
+              <div>
+                <div class="leadership-card-top">
+                  <div class="leadership-icon-box"><i class="fas fa-book-reader"></i></div>
+                  <span class="leadership-badge">Curriculum Design</span>
+                </div>
+                <h4 class="leadership-card-title">Member of Board of Studies</h4>
+                <p class="leadership-card-desc">
+                  Actively evaluating and modernizing undergraduate and postgraduate curricula, course outlines, textbooks, laboratory equipment standards, and examination methodologies in Civil Engineering.
+                </p>
+              </div>
+            </div>
+
+            <!-- Role 4: Member for Board of Faculty -->
+            <div class="leadership-card">
+              <div>
+                <div class="leadership-card-top">
+                  <div class="leadership-icon-box"><i class="fas fa-sitemap"></i></div>
+                  <span class="leadership-badge">Faculty Governance</span>
+                </div>
+                <h4 class="leadership-card-title">Member for Board of Faculty</h4>
+                <p class="leadership-card-desc">
+                  Contributing to faculty-wide governance decisions, approving advanced degree program curricula, evaluating academic appointments, and formulating strategic institutional guidelines.
+                </p>
+              </div>
+            </div>
+
+            <!-- Role 5: Coordinator for FYP -->
+            <div class="leadership-card">
+              <div>
+                <div class="leadership-card-top">
+                  <div class="leadership-icon-box"><i class="fas fa-project-diagram"></i></div>
+                  <span class="leadership-badge">Senior Capstone</span>
+                </div>
+                <h4 class="leadership-card-title">Coordinator for Final Year Project of Undergraduate Program</h4>
+                <p class="leadership-card-desc">
+                  Administering senior engineering design project allocations, progress monitoring milestones, external jury coordination, and evaluation defenses for graduating batches.
+                </p>
+              </div>
+            </div>
+
+            <!-- Role 6: Focal Person for Industrial Liaison -->
+            <div class="leadership-card">
+              <div>
+                <div class="leadership-card-top">
+                  <div class="leadership-icon-box"><i class="fas fa-handshake"></i></div>
+                  <span class="leadership-badge">Industry Links</span>
+                </div>
+                <h4 class="leadership-card-title">Focal Person for Industrial Liaison</h4>
+                <p class="leadership-card-desc">
+                  Establishing institutional linkages with leading construction contractors, consulting firms, and public works authorities to arrange student internships and joint research schemes.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ==================== SUB-VIEW 2: CONTINUOUS SERVICE ==================== -->
+        <div id="activity-subview-service" class="activity-subview">
+
+          <!-- Summary Metric Banner -->
+          <div class="grants-summary-banner">
+            <div class="grants-summary-left">
+              <h3><i class="fas fa-feather-alt" style="color: var(--accent-gold); margin-right: 0.5rem;"></i> Editorial Board &amp; Scholarly Peer Reviewer</h3>
+              <p>Dedicated international service advancing peer review rigor, editorial leadership, and research integrity across premier civil engineering journals.</p>
+            </div>
+            <div class="grants-stat-badges">
+              <span class="grant-stat-chip"><i class="fas fa-check-circle" style="color: #10b981;"></i> <strong>20+</strong> Q1/Q2 Journals Reviewed</span>
+              <span class="grant-stat-chip"><i class="fas fa-newspaper" style="color: var(--brand-azure);"></i> <strong>5+</strong> Editorial Board Roles</span>
+              <span class="grant-stat-chip"><i class="fas fa-globe" style="color: var(--accent-gold);"></i> <strong>International</strong> Advisory Boards</span>
+            </div>
+          </div>
+
+          <!-- Continuous Service Cards Grid -->
+          <div class="service-cards-grid">
+
+            <!-- Card 1: Invited Peer Reviewer -->
+            <div class="service-card" style="grid-column: span 2;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+                <span class="leadership-badge">Peer Review Rigor</span>
+                <span class="grant-status-badge active"><i class="fas fa-star"></i> 20+ Top Journals</span>
+              </div>
+              <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.5rem;">
+                Invited Peer Reviewer for 20+ International Q1/Q2 Journals
+              </h4>
+              <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+                Regularly appointed expert reviewer for premier high-impact international journals indexed in Web of Science (SCIE) and Scopus, critically appraising manuscripts in construction management, structural equation modeling, risk forecasting, and sustainable concrete technology:
+              </p>
+              <div class="journal-pills-list">
+                <div class="journal-pill-item">
+                  <i class="fas fa-check-circle" style="color: #10b981; margin-top: 0.2rem;"></i>
+                  <div><strong>ASCE Journal of Construction Engineering and Management</strong> — American Society of Civil Engineers (Q1 / SCIE)</div>
+                </div>
+                <div class="journal-pill-item">
+                  <i class="fas fa-check-circle" style="color: #10b981; margin-top: 0.2rem;"></i>
+                  <div><strong>International Journal of Project Management</strong> — Elsevier / IPMA (Q1 / SCIE)</div>
+                </div>
+                <div class="journal-pill-item">
+                  <i class="fas fa-check-circle" style="color: #10b981; margin-top: 0.2rem;"></i>
+                  <div><strong>Construction Management and Economics</strong> — Taylor &amp; Francis (Q1/Q2 / Scopus)</div>
+                </div>
+                <div class="journal-pill-item">
+                  <i class="fas fa-check-circle" style="color: #10b981; margin-top: 0.2rem;"></i>
+                  <div><strong>Sustainability</strong> — MDPI (Q1 / SCIE)</div>
+                </div>
+                <div class="journal-pill-item" style="border-left-color: var(--accent-gold); font-weight: 600;">
+                  <i class="fas fa-plus-circle" style="color: var(--accent-gold); margin-top: 0.2rem;"></i>
+                  <div>Over 15 additional peer-reviewed technical journals in civil engineering, materials, and infrastructure analytics</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 & 3 Stack: Editorial & Advisory -->
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+              
+              <!-- Editorial Member -->
+              <div class="service-card" style="flex: 1;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+                  <span class="leadership-badge">Editorial Stewardship</span>
+                  <span class="grant-status-badge completed">5+ Journals</span>
+                </div>
+                <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.5rem;">
+                  Editorial Member in 5+ Journals
+                </h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                  Serving on the editorial boards of 5+ international academic journals, supervising manuscript review workflows, commissioning special thematic issues, and ensuring ethical compliance with international publishing standards.
+                </p>
+              </div>
+
+              <!-- Advisory Board Member -->
+              <div class="service-card" style="flex: 1;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+                  <span class="leadership-badge">Scientific Governance</span>
+                  <span class="grant-status-badge active">Global Advisory</span>
+                </div>
+                <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.5rem;">
+                  Advisory Board Member in Several Journals &amp; Conferences
+                </h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+                  Providing strategic guidance and scientific oversight on advisory boards of international technical journals and peer-reviewed engineering conference series across Asia and the Middle East.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ==================== SUB-VIEW 3: WORKSHOPS & KEYNOTES ==================== -->
+        <div id="activity-subview-workshops" class="activity-subview">
+
+          <!-- Summary Metric Banner -->
+          <div class="grants-summary-banner">
+            <div class="grants-summary-left">
+              <h3><i class="fas fa-microphone-alt" style="color: var(--accent-gold); margin-right: 0.5rem;"></i> Workshops, Keynotes &amp; Professional Trainings</h3>
+              <p>Keynote addresses, provincial master trainings, CPD-accredited courses, and specialized academic lectures delivered internationally and nationally.</p>
+            </div>
+            <div class="grants-stat-badges">
+              <span class="grant-stat-chip"><i class="fas fa-microphone" style="color: var(--accent-gold);"></i> <strong>Keynote</strong> Speaker</span>
+              <span class="grant-stat-chip"><i class="fas fa-chalkboard-teacher" style="color: var(--brand-azure);"></i> <strong>Master</strong> Trainer</span>
+              <span class="grant-stat-chip"><i class="fas fa-certificate" style="color: #10b981;"></i> <strong>10</strong> Featured Events</span>
+            </div>
+          </div>
+
+          <!-- Chronological List of Workshops & Keynotes -->
+          <div class="workshops-timeline-list">
+
+            <!-- Item 1: March 2026 Keynote -->
+            <div class="workshop-item-card keynote">
+              <div style="flex: 1;">
+                <span class="workshop-role-tag"><i class="fas fa-microphone"></i> Keynote Speaker</span>
+                <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.4rem;">
+                  Keynote Speaker in Seminar on "Research in the Era of Artificial Intelligence"
+                </h4>
+                <div style="font-size: 0.88rem; color: var(--accent-gold); font-weight: 600; margin-bottom: 0.5rem;">
+                  <i class="fas fa-university" style="margin-right: 0.35rem;"></i> Dept. of Civil Engineering, Architecture and City &amp; Regional Planning, Mehran University of Engineering &amp; Technology (MUET), Jamshoro, Sindh, Pakistan
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55;">
+                  Delivered keynote on the transformative role of generative AI, computational machine learning models, and automated predictive algorithms in civil engineering and construction management research.
+                </p>
+              </div>
+              <span class="workshop-date-badge"><i class="far fa-calendar-alt" style="color: var(--accent-gold); margin-right: 0.3rem;"></i> 2nd March 2026</span>
+            </div>
+
+            <!-- Item 2: Jan 2023 Keynote -->
+            <div class="workshop-item-card keynote">
+              <div style="flex: 1;">
+                <span class="workshop-role-tag"><i class="fas fa-users"></i> Keynote Speaker &amp; Panelist</span>
+                <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.4rem;">
+                  Keynote Speaker and Panel in Seminar on "UG Thesis Myths &amp; Realities"
+                </h4>
+                <div style="font-size: 0.88rem; color: var(--accent-gold); font-weight: 600; margin-bottom: 0.5rem;">
+                  <i class="fas fa-university" style="margin-right: 0.35rem;"></i> Society of Civil Engineers, Quaid-e-Awam University of Engineering, Science &amp; Technology (QUEST), Nawabshah
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55;">
+                  Addressed graduating engineering students to clarify research problem formulation, empirical field investigation, and scientific thesis writing standards.
+                </p>
+              </div>
+              <span class="workshop-date-badge"><i class="far fa-calendar-alt" style="color: var(--accent-gold); margin-right: 0.3rem;"></i> 10th January 2023</span>
+            </div>
+
+            <!-- Item 3: Nov 2021 Master Trainer -->
+            <div class="workshop-item-card keynote">
+              <div style="flex: 1;">
+                <span class="workshop-role-tag" style="background: rgba(3, 105, 161, 0.15); color: var(--brand-azure); border-color: rgba(3, 105, 161, 0.3);"><i class="fas fa-chalkboard-teacher"></i> Master Trainer</span>
+                <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.4rem;">
+                  Master Trainer in 10 Days Training on "Construction Management and Procurement"
+                </h4>
+                <div style="font-size: 0.88rem; color: var(--accent-gold); font-weight: 600; margin-bottom: 0.5rem;">
+                  <i class="fas fa-water" style="margin-right: 0.35rem;"></i> For Irrigation Department, Government of Balochistan • Organized by U.S.-Pakistan Center for Advanced Studies in Water (USPCAS-W), MUET Jamshoro
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55;">
+                  Conducted under the Balochistan Integrated Water Resource Management and Development Project (BIWRMDP), training senior provincial irrigation engineers on procurement frameworks, FIDIC/PEC contract conditions, and cost-time control.
+                </p>
+              </div>
+              <span class="workshop-date-badge"><i class="far fa-calendar-alt" style="color: var(--accent-gold); margin-right: 0.3rem;"></i> 15 – 25 November 2021</span>
+            </div>
+
+            <!-- Item 4: 2015 & 2016 CPD Workshop -->
+            <div class="workshop-item-card">
+              <div style="flex: 1;">
+                <span class="workshop-role-tag" style="background: rgba(16, 185, 129, 0.12); color: #10b981; border-color: rgba(16, 185, 129, 0.3);"><i class="fas fa-certificate"></i> CPD Workshop Lead • 1 CPD Point</span>
+                <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.4rem;">
+                  Workshop on "Writing Graduate Thesis and Scientific Research Paper" (One CPD Point)
+                </h4>
+                <div style="font-size: 0.88rem; color: var(--accent-gold); font-weight: 600; margin-bottom: 0.5rem;">
+                  <i class="fas fa-university" style="margin-right: 0.35rem;"></i> Department of Civil Engineering, QUEST Nawabshah, Pakistan
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55;">
+                  Organized and delivered accredited continuing professional development workshops on 14 April 2015 and 21 April 2016 for postgraduates and practicing engineers.
+                </p>
+              </div>
+              <span class="workshop-date-badge"><i class="far fa-calendar-alt" style="color: var(--accent-gold); margin-right: 0.3rem;"></i> April 2015 &amp; 2016</span>
+            </div>
+
+            <!-- Item 5: Sept 2014 CPD Course -->
+            <div class="workshop-item-card">
+              <div style="flex: 1;">
+                <span class="workshop-role-tag" style="background: rgba(16, 185, 129, 0.12); color: #10b981; border-color: rgba(16, 185, 129, 0.3);"><i class="fas fa-laptop-code"></i> CPD Course Instructor • 1 CPD Point</span>
+                <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.4rem;">
+                  Course on "Windows NT (Microsoft Applications for Solving Engineering Problems)" (One CPD Point)
+                </h4>
+                <div style="font-size: 0.88rem; color: var(--accent-gold); font-weight: 600; margin-bottom: 0.5rem;">
+                  <i class="fas fa-university" style="margin-right: 0.35rem;"></i> Department of Civil Engineering, QUEST Nawabshah
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55;">
+                  Week-long intensive course training civil engineers and faculty on utilizing computational spreadsheet tools and software applications for engineering calculations and project scheduling.
+                </p>
+              </div>
+              <span class="workshop-date-badge"><i class="far fa-calendar-alt" style="color: var(--accent-gold); margin-right: 0.3rem;"></i> 08 – 12 September 2014</span>
+            </div>
+
+            <!-- Item 6: April 2014 Malaysia Workshop -->
+            <div class="workshop-item-card">
+              <div style="flex: 1;">
+                <span class="workshop-role-tag"><i class="fas fa-pen-fancy"></i> Invited Expert Trainer</span>
+                <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.4rem;">
+                  Workshop on "Technical Journal Writing"
+                </h4>
+                <div style="font-size: 0.88rem; color: var(--accent-gold); font-weight: 600; margin-bottom: 0.5rem;">
+                  <i class="fas fa-globe-asia" style="margin-right: 0.35rem;"></i> Organized by Solid Waste and Public Cleansing Management Corporation under Ministry of Urban Wellbeing, Housing and Local Government, Malaysia
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55;">
+                  International professional workshop conducted in Malaysia guiding environmental engineers and researchers on structure, data presentation, and publication strategies for high-impact journals.
+                </p>
+              </div>
+              <span class="workshop-date-badge"><i class="far fa-calendar-alt" style="color: var(--accent-gold); margin-right: 0.3rem;"></i> 23 – 24 April 2014</span>
+            </div>
+
+            <!-- Item 7: June 2012 OJS Workshop -->
+            <div class="workshop-item-card">
+              <div style="flex: 1;">
+                <span class="workshop-role-tag"><i class="fas fa-tools"></i> Technical Facilitator</span>
+                <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.4rem;">
+                  Workshop on "Open Journal System"
+                </h4>
+                <div style="font-size: 0.88rem; color: var(--accent-gold); font-weight: 600; margin-bottom: 0.5rem;">
+                  <i class="fas fa-university" style="margin-right: 0.35rem;"></i> Publication Office, Universiti Tun Hussein Onn Malaysia (UTHM)
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55;">
+                  Facilitated training on managing online scholarly journal submissions, indexing protocols, and digital peer review workflows on Open Journal Systems.
+                </p>
+              </div>
+              <span class="workshop-date-badge"><i class="far fa-calendar-alt" style="color: var(--accent-gold); margin-right: 0.3rem;"></i> 14 June 2012</span>
+            </div>
+
+            <!-- Item 8: Oct 2011 Primavera Lecture -->
+            <div class="workshop-item-card">
+              <div style="flex: 1;">
+                <span class="workshop-role-tag"><i class="fas fa-project-diagram"></i> Guest Lecturer</span>
+                <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.4rem;">
+                  Lecture on "Project Management with Primavera Project Planner (P3)"
+                </h4>
+                <div style="font-size: 0.88rem; color: var(--accent-gold); font-weight: 600; margin-bottom: 0.5rem;">
+                  <i class="fas fa-university" style="margin-right: 0.35rem;"></i> Student Representative Council (MPP), Universiti Tun Hussein Onn Malaysia (UTHM)
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55;">
+                  Delivered hands-on lecture to civil engineering students on creating critical path schedules, work packages, resource constraints, and baseline tracking using Primavera P3.
+                </p>
+              </div>
+              <span class="workshop-date-badge"><i class="far fa-calendar-alt" style="color: var(--accent-gold); margin-right: 0.3rem;"></i> 2 October 2011</span>
+            </div>
+
+            <!-- Item 9: Sept 2011 Statistical Methods -->
+            <div class="workshop-item-card">
+              <div style="flex: 1;">
+                <span class="workshop-role-tag"><i class="fas fa-chart-line"></i> Resource Person</span>
+                <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.4rem;">
+                  Lecture on "Advanced Statistical Methods of Data Analysis"
+                </h4>
+                <div style="font-size: 0.88rem; color: var(--accent-gold); font-weight: 600; margin-bottom: 0.5rem;">
+                  <i class="fas fa-university" style="margin-right: 0.35rem;"></i> Centre of Facility Management, Universiti Tun Hussein Onn Malaysia (UTHM)
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55;">
+                  Specialized lecture addressing postgraduate researchers on exploratory factor analysis, multivariate statistical models, and hypothesis testing in engineering management.
+                </p>
+              </div>
+              <span class="workshop-date-badge"><i class="far fa-calendar-alt" style="color: var(--accent-gold); margin-right: 0.3rem;"></i> 5 September 2011</span>
+            </div>
+
+            <!-- Item 10: Aug 2011 OJS Workshop -->
+            <div class="workshop-item-card">
+              <div style="flex: 1;">
+                <span class="workshop-role-tag"><i class="fas fa-cogs"></i> Technical Trainer</span>
+                <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.4rem;">
+                  Workshop on "Using UTHM OJS System"
+                </h4>
+                <div style="font-size: 0.88rem; color: var(--accent-gold); font-weight: 600; margin-bottom: 0.5rem;">
+                  <i class="fas fa-university" style="margin-right: 0.35rem;"></i> Publication Office, Universiti Tun Hussein Onn Malaysia (UTHM)
+                </div>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55;">
+                  Hands-on training session instructing editors and academic authors on navigating and administering the UTHM institutional Open Journal Systems repository.
+                </p>
+              </div>
+              <span class="workshop-date-badge"><i class="far fa-calendar-alt" style="color: var(--accent-gold); margin-right: 0.3rem;"></i> 9 August 2011</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ==========================================================================
          TAB VIEW 8: CURRICULUM VITAE (CV)
          ========================================================================== -->
                                     <div id="cv-view" class="view-section">

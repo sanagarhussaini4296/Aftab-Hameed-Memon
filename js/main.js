@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSectionTabs();
   initAnimatedCounters();
   initResearchSubtabs();
+  initActivitySubtabs();
   initPublications();
   initBibtexModal();
   initContactForm();
@@ -219,6 +220,39 @@ function switchResearchSubtab(subtabId) {
   // Show target subview, hide others
   document.querySelectorAll('.research-subview').forEach(view => {
     if (view.id === `research-subview-${subtabId}`) {
+      view.classList.add('active');
+    } else {
+      view.classList.remove('active');
+    }
+  });
+}
+
+/* ----------------------------------------------------
+   3.6. Activities 3 Sub-Sections (Leadership, Service, Workshops)
+   ---------------------------------------------------- */
+function initActivitySubtabs() {
+  const subtabButtons = document.querySelectorAll('[data-activity-tab]');
+  subtabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetSubtab = btn.getAttribute('data-activity-tab');
+      switchActivitySubtab(targetSubtab);
+    });
+  });
+}
+
+function switchActivitySubtab(subtabId) {
+  // Update button active state
+  document.querySelectorAll('[data-activity-tab]').forEach(btn => {
+    if (btn.getAttribute('data-activity-tab') === subtabId) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
+  // Show target subview, hide others
+  document.querySelectorAll('.activity-subview').forEach(view => {
+    if (subtabId === 'all' || view.id === `activity-subview-${subtabId}`) {
       view.classList.add('active');
     } else {
       view.classList.remove('active');
