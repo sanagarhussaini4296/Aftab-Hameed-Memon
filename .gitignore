@@ -5,6 +5,8 @@ node_modules/
 scratch/
 .system_generated/
 .netlify/
+backups/
+data/
 
 # Logs & temp files
 *.log

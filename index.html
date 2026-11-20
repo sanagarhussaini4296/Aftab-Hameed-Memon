@@ -75,6 +75,8 @@
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- Admin Stylesheet -->
+  <link rel="stylesheet" href="css/admin.css">
 </head>
 
 <body class="bg-grid-pattern">
@@ -193,7 +195,7 @@
 
               <!-- Academic Profiles Strip -->
               <div class="academic-links-bar">
-                <span class="academic-links-label">Profiles:</span>
+                <span class="academic-links-label secret-admin-trigger" id="adminProfilesTrigger" title="Profiles">Profiles:</span>
 
                 <a href="https://scholar.google.com/citations?user=CjmiuJMAAAAJ&hl=en&oi=ao" target="_blank"
                   rel="noopener noreferrer" class="social-badge" title="Google Scholar Profile">
@@ -2518,6 +2520,8 @@
   <!-- JavaScript Modules -->
   <script src="js/publications-data.js"></script>
   <script src="js/main.js"></script>
+  <!-- Admin In-Place & Content Management System -->
+  <script src="js/admin.js" defer></script>
 </body>
 
 </html>
